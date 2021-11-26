@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 25px;
+  margin-bottom: 50px;
+  margin-left: 15px;
+}
+
+.title{
+  margin-top: 150px;  
+}
+
+.input-busca {
+  margin-top: 15px;
+  height:40px ;
+}
+h1{
+  margin-top: 130px;
+  height: 30px;
+}
+
+.mensagem {
+  align-content: center;
+}

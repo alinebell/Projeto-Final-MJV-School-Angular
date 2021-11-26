@@ -1,0 +1,22 @@
+ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    justify-content: center;
+    font-size: 30px;
+    margin: 10px;
+    li{
+        cursor:pointer;
+    }
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #48D1CC;
+    height: 80px;
+    justify-content: center;
+}
