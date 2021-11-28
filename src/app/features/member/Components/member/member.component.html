@@ -2,27 +2,24 @@
     <img [src]="member?.img" height="150px;" width="150px"><br>
     <h2>Nome: {{member?.nome}} </h2>
     <h3>Matrícula: {{member?.id}} </h3>
+    <p>Data da última consulta: {{member?.lastVisit | date:'longDate'}}</p>
     <p>Paciente desde: {{member?.inclusionDate | date:'longDate'}}</p>
     <button (click)="navigateToDetails()">Exibir detalhes</button>
     
 </div>
 
 <div class="details" *ngIf="!card && member">
-    <img [src]="member?.img" height="300px;" width="300px"><br>
+    <img [src]="member?.img" height="200px;" width="200px"><br>
     <h2>Nome: {{member?.nome}} </h2>
     <h3>Matrícula: {{member?.id}} </h3>
+    <p>Data da última consulta: {{member?.lastVisit | date:'longDate'}}</p>
+    <p>Paciente desde: {{member?.inclusionDate | date:'longDate'}}</p>
     <p>Idade: {{member?.idade}} </p>
     <p>Peso: {{member?.peso}}</p>
     <p>Altura: {{member?.altura}}</p>
-    <p>Paciente desde: {{member?.inclusionDate | date:'longDate'}}
-
-    <p>
-        Altura, peso, sexo, idade. 
-        IMC/FICHA/% de gordura corporal
-        completar dados
-       
-    </p>
-
-    
+    <p>Gênero: {{member?.gender}}</p>
+    <p>Gordura corporal: {{member?.bodyFat | percent}}</p>
+    <p>Motivo da consulta: {{member?.motive}}</p>
+    <p>Prontuário de evolução: {{member?.record}}</p>    
     
 </div>

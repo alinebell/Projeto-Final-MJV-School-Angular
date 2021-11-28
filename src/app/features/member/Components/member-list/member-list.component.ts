@@ -20,10 +20,10 @@ export class MemberListComponent implements OnInit {
     this.filteredMembers = this.members;
   }
 
-  searchMember(event: any) {
-    const value = event.target.value;
-    const members = this.members.filter((member) => member.nome.toUpperCase().search(value.toUpperCase()) > -1 );
-    this.filteredMembers = members;
-  }
+    searchMember(event: any) {
+      const value = event.target.value;
+      const members = this.members.filter((member) => member.nome.toUpperCase().search(value.toUpperCase()) > -1 );
+      this.filteredMembers = members;
+    }
 
 }
