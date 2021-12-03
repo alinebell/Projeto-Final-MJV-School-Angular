@@ -1,8 +1,9 @@
 <nav>
     <ul>
-        <li (click)="navigateByUrl('')">Início</li>
-        <li (click)="navigateByUrl('login')">Login</li>
-        <li (click)="navigateByUrl('members')">Pacientes</li>
-        <li (click)="navigateByUrl('register')">Cadastro</li>
+        <li (click)="navigateByUrl('')" *ngIf="member">Início</li>
+        <li (click)="navigateByUrl('login')" *ngIf="!member">Login</li>
+        <li (click)="navigateByUrl('members')"*ngIf="member">Pacientes</li>
+        <li (click)="navigateByUrl('register')"*ngIf="member">Cadastro de pacientes</li>
+        <li (click)="exit()" *ngIf="member">Sair</li>
         
     </ul>

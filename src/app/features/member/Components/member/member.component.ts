@@ -10,7 +10,7 @@ import { Members } from '../../models/member.model';
 export class MemberComponent implements OnInit {
 
   @Input()
-  card?: Boolean;
+  card?: boolean;
 
   @Input()
   member?: Members;

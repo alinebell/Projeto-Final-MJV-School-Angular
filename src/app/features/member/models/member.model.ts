@@ -11,4 +11,6 @@ export interface Members {
     motive: string;
     record: string;
     gender: string;
+    email: string;
+    senha: string;
 }
