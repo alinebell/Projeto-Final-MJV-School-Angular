@@ -69,7 +69,7 @@ export class MemberServiceService {
   constructor() { }
 
   getDefaultMember(): Members {
-    const dateToday = moment().format('YYYY/MM/DD');
+    const dateToday = moment().format('YYYY/MM/DD')
     return {
       nome: '',
       id: this.generateNextId(),
@@ -81,7 +81,7 @@ export class MemberServiceService {
       motive: '',
       record: '',
       img: '',
-      inclusionDate: dateToday,
+      inclusionDate:dateToday,
       lastVisit: dateToday,
       email: '',
       senha: '',
@@ -102,9 +102,10 @@ export class MemberServiceService {
     return this.members.find((member) =>member.email === email && member.senha === senha);
   }
 
-  generateNextId(): number {
-    return this.members[(this.members.length - 1)].id + 1;
+  generateNextId() {
+    return (this.members[(this.members.length - 1)].id + 1);
   }
+  
 
   createMember(member: Members){
     this.members.push(member);

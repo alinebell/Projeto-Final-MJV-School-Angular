@@ -14,8 +14,8 @@ export class RegisterMemberComponent implements OnInit {
 
   memberForm = new FormGroup ({
     nome: new FormControl('',[Validators.required]),
-    email: new FormControl(''),
-    senha: new FormControl(),
+    email: new FormControl('', [Validators.required]),
+    senha: new FormControl('', [Validators.required]),
     idade: new FormControl(),
     peso: new FormControl(),
     altura: new FormControl(),
@@ -42,7 +42,7 @@ export class RegisterMemberComponent implements OnInit {
   
   onSubmit() {
     const formValue = this.memberForm.value;
-    this.member.id = formValue.id;
+    this.member.id,
     this.member.nome = formValue.nome;
     this.member.email = formValue.email;
     this.member.senha = formValue.senha;
@@ -52,8 +52,8 @@ export class RegisterMemberComponent implements OnInit {
     this.member.gender = formValue.genero;
     this.member.bodyFat = formValue.gordura;
     this.member.motive = formValue.motivo;
-    this.member.inclusionDate = formValue.inclusionDate;
-    this.member.lastVisit = formValue.lastVisit;
+    this.member.inclusionDate;
+    this.member.lastVisit;
     this.member.img = formValue.foto;
     this.member.record = formValue.historico;
     this.membersService.createMember(this.member);

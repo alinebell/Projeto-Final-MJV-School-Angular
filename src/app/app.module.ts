@@ -9,7 +9,8 @@ import { RegisterModule } from './features/register/register.module';
 import { SharedModule } from './shared/shared.module';
 import { registerLocaleData } from '@angular/common';
 import { LOCALE_ID } from '@angular/core';
-import localePt from '@angular/common/locales/pt'
+import localePt from '@angular/common/locales/pt';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 registerLocaleData(localePt)
 
@@ -22,7 +23,8 @@ registerLocaleData(localePt)
     AppRoutingModule,
     MemberModule,
     LoginModule,
-    RegisterModule
+    RegisterModule,
+    BrowserAnimationsModule
   ],
   providers: [
     {
