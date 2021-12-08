@@ -8,6 +8,8 @@ ul {
     margin: 10px;
     li{
         cursor:pointer;
+        text-align: justify;
+        margin-top: 20px;
     }
 }
 
@@ -16,7 +18,8 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #48D1CC;
+    background-color: #7344c9;
     height: 80px;
     justify-content: center;
+    z-index: 10;
 }

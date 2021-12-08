@@ -4,7 +4,8 @@
     <h3>Matrícula: {{member?.id}} </h3>
     <p>Data da última consulta: {{member?.lastVisit | date:'longDate'}}</p>
     <p>Paciente desde: {{member?.inclusionDate | date:'longDate'}}</p>
-    <button (click)="navigateToDetails()">Exibir detalhes</button>
+    <button mat-raised-button color="primary" (click)="navigateToDetails()">Exibir detalhes</button>
+    <!--<button (click)="navigateToDetails()"></button>-->
     
 </div>
 

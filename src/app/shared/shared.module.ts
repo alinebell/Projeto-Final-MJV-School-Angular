@@ -2,6 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import {MatButtonModule} from '@angular/material/button';
+
+
+
+
+const materialModules =[MatButtonModule];
 
 
 
@@ -11,11 +17,13 @@ import { FooterComponent } from './components/footer/footer.component';
     FooterComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    materialModules,
   ],
   exports: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    materialModules
   ]
 })
 export class SharedModule { }

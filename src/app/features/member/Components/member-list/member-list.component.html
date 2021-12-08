@@ -1,10 +1,10 @@
-<h1>Lista de pacientes</h1>
+<h1><b>Lista de pacientes</b></h1>
 <div>
     <input type="text" class="input-busca" placeholder="Digite um nome" (keyup)="searchMember($event)">
 </div>
 
 <div class="container"> 
-    <app-member 
+    <app-member  
     *ngFor="let item of filteredMembers" 
     [member]="item"
     [card]="true"></app-member>
